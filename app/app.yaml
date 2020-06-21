@@ -1,0 +1,11 @@
+basic_scaling:
+  idle_timeout: 10m
+  max_instances: 4
+entrypoint: "gunicorn -b 0.0.0.0:8080 main:server"
+resources:
+  cpu: 4
+  disk_size_gb: 20
+  memory_gb: 30
+runtime: python37
+
+
